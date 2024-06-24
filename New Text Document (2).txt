@@ -1,0 +1,40 @@
+Q- Array Ques
+
+let arr = [85,25,36,29,13]
+let temp1=""
+for(let i = 0; i<arr.length;i++){
+    let temp = arr[i]%10
+    console.log(temp)
+    temp1 += temp
+
+   
+}
+let num = Number(temp1)
+// console.log(num)
+if(num % 10 === 0){
+    console.log("yes")
+}else{
+    console.log("No")
+}
+
+Q- Diagonal Array
+let arr = [[1,2,3],
+           [4,5,6],
+           [9,8,9]];
+
+let a = arr.length; 
+    let subarr1 = 0;
+    let subarr2 = 0;
+  for(var i=0; i<a; i++){
+     for(var j=0; j<a; j++){
+         if(i === j) {
+          subarr1 += arr[i][j];
+        //   console.log(subarr1)
+         }
+         if(i + j === 2){
+            subarr2 += arr[i][j];
+            // console.log(subarr2)
+         }
+      }
+  }
+  console.log(Math.abs(subarr1-subarr2))
